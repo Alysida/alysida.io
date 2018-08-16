@@ -43,7 +43,8 @@
   color: #000000;
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+#mainNav .navbar-nav li.nav-item a.nav-link:active,
+#mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #000000;
 }
 
@@ -73,11 +74,13 @@
   #mainNav .navbar-nav {
     margin-top: 0;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
     color: #000000;
     background: #18BC9C;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
     color: #000000;
     background: #18BC9C;
   }
@@ -95,4 +98,44 @@
   padding-bottom: 5rem;
   background-color: #ffffff;
   color: #000000;
+}
+
+a.image-55 {
+  width: 98%;
+  height: 0;
+  padding-bottom: 55%;
+  overflow: hidden;
+}
+
+a.image-55 img {
+  width: 98%;
+}
+
+a.image-60 {
+  width: 98%;
+  height: 0;
+  padding-bottom: 56%;
+  overflow: hidden;
+}
+
+a.image-60 img {
+  width: 98%;
+}
+
+.zoom {
+  transition: transform .1s; 
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.02);
+}
+
+.team-photo{
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  width: 100%;
+  height: 100%;
 }

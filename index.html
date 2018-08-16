@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  
-  <link rel="Shortcut Icon" type="image/x-icon" href="img/logo.png"" />
+
+  <link rel="icon" href="img/logo.png">
 
   <title>ALYSIDA</title>
 
@@ -26,7 +26,21 @@
   <!-- Custom styles for this template -->
   <link href="css/alysida.min.css" rel="stylesheet">
 
+  <!-- Website icon -->
   <link href="css/custom.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124133832-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-124133832-1');
+  </script>
 
 </head>
 
@@ -47,7 +61,7 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#project">專案</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">團隊</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">團隊</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">關於</a>
@@ -60,7 +74,7 @@
   <!-- Header -->
   <header class="masthead bg-primary text-black text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/logo.png" alt="">
+      <img class="img-fluid mb-5 d-block mx-auto" style="width: 100% ; max-width: 100px;" src="img/logo.svg" alt="LOGO">
       <h1 class="text-uppercase mb-0">ALYSIDA</h1>
       <br>
       <h2 class="font-weight-light mb-0">探索去中心化的新紀元</h2>
@@ -75,14 +89,13 @@
       <br>
       <br>
       <div class="row">
-        <div class="col-md-6 col-lg-4 ml-auto">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+        <div class="col-md-6 col-lg-4  zoom">
+          <a class="portfolio-item d-block mx-auto" href="#hackathon2018">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/project/hackathon.png" alt="hackathon" class="img-thumbnail">
+            <img class="img-fluid" src="img/project/hackathon/hackathon.png" alt="hackathon" class="img-thumbnail">
           </a>
           <div class=" text-center">
             <h4>
@@ -91,14 +104,13 @@
             </h4>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mr-auto">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+        <div class="col-md-6 col-lg-4 zoom">
+          <a class="portfolio-item d-block mx-auto" href="#commeetup">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/project/blockmeetup.JPG" alt="BlockchainMeetUP" class="img-thumbnail">
+            <img class="img-fluid" src="img/project/communtiesmeetup/blockmeetup.JPG" alt="BlockchainMeetUP" class="img-thumbnail">
           </a>
           <div class="text-center">
             <h4>
@@ -107,8 +119,47 @@
             </h4>
           </div>
         </div>
+        <div class="col-md-6 col-lg-4  zoom">
+          <a class="portfolio-item d-block mx-auto image-60" href="#okex">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+              </div>
+            </div>
+            <img class="img-fluid" src="img/project/okex/okex.jpg" alt="OKEx" class="img-thumbnail">
+          </a>
+          <div class="text-center">
+            <h4>
+              <br>OKEx Taiwan-
+              <br>IOTA x Cardano Meetup
+            </h4>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 zoom">
+          <a class="portfolio-item d-block mx-auto image-55" href="#ethmeetup">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+              </div>
+            </div>
+            <img class="img-fluid" src="img/project/eth/eth.jpg" alt="ETHMeetUP" class="img-thumbnail">
+          </a>
+          <div class="text-center">
+            <h4>
+              <br>區塊鏈應用落地還缺哪些環節？
+              <br>—基於公鏈的應用層協議和移動端解決方案（實作工作坊）
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
+  <!-- Team Section -->
+  <section class="mb-0" id="team">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-black">ALYSIDA 團隊</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <img src="img/project/communtiesmeetup/blockmeetup.JPG" class="team-photo">
       </div>
     </div>
   </section>
@@ -185,10 +236,193 @@
     </a>
   </div>
 
-  <!-- Portfolio Modals -->
+  <!-- hackathon2018 -->
+  <div class="portfolio-modal mfp-hide" id="hackathon2018">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">智慧城市黑客松2018 -
+              <br> 勾勒城市自主治理的想像
+            </h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/project/hackathon/hackathon.png" alt="hackathon2018">
+            <p class="mb-5">智慧城市黑客松2018 — 勾勒城市自主治理的想像
+              <br> 「智慧城市」的核心概念是在於「使都市機能以最有效率的方式運作」，在新一代資訊科技配合知識社會的創新環境之下，構築出更加進步的城市治理與市民生活形態。
+              <br> 時至2018年，資訊科技的演變、展現了更加多元的面向，AI、深度學習隨著軟硬體技術的革新，為數據處理帶來全新的應用；IoT 物聯網的使用情境逐漸成熟之際，更出現了分散式帳本IOTA，以新的技術方向考慮物聯網的開放數據交換協定、討論處理海量資料的可能；去年以來，區塊鏈爆發性發展引起了諸多的討論，智能合約傳遞「價值」的應用情境初步成熟，帶來許多隱私、個資、數據等等自主權利議題，與配合制度進行自主治理的諸多想像。
+              <br> 「智慧城市黑客松2018」基於AI、IoT、區塊鏈等技術面向，鼓勵參賽者考慮降低政府企業等第三方單位介入、以科技進行城市自主治理（Self-Governance），進而實現社會創新的可能性；故以「勾勒城市自主治理的想像」為主題，提供開發者們三夜兩天約四十小時，進行長時間、不間斷而專注於原型開發的機會！
+            </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" data-toggle="modal" data-target="#unsign">
+              <i class="fa fa-ticket"></i>
+              報名連結
+            </a>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" data-toggle="modal" data-target="#nophoto">
+              <i class="fa fa-photo"></i>
+              活動照片
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Portfolio Modal 1 -->
-  
+  <!-- communties meetup -->
+  <div class="portfolio-modal mfp-hide" id="commeetup">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">
+              區塊鏈社群咪起來！
+              <br> Communities Meet up!
+            </h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/project/communtiesmeetup/meetup.jpg" alt="hackathon2018">
+            <p class="mb-5">2018的今日，幾千種的加密貨幣湧現，交易所服務推陳出新， 多樣化的討論與教學都顯示出：
+              <br> 加密貨幣與區塊鏈的發展，已經進入了百家爭鳴的時代。
+              <br> 過程中，關心加密貨幣與區塊鏈議題發展的人們， 自發地組織起各大民間「社群」，直接性的推動了這股浪潮發生。 做為探索去中心化系統發展的一員，ALYSIDA團隊敬邀對區塊鏈感興趣的朋友與社群一起「咪起來」， 不論愛好者、社群夥伴、還是剛開始探索的初學者，讓我們期待有更多的「共識」發生。
+            </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="https://alysida.kktix.cc/events/b-c-meetup" role="button">
+              <i class="fa fa-ticket"></i>
+              報名連結
+            </a>
+
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="https://photos.google.com/share/AF1QipO97u1bRBvcP_-iqMQnSzCdFtlJlCaSapMh3dNWTuXXWQz3zkFYUs4hMh9JH9gXtw?key=SVgwbWRPSm9CTV9CVnlBcURoY0sxRjlrX2pwN0hn">
+              <i class="fa fa-photo"></i>
+              活動照片
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  OKEx -->
+  <div class="portfolio-modal mfp-hide" id="okex">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">
+              OKEx Taiwan-
+              <br>IOTA x Cardano Meetup
+            </h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/project/okex/okex.jpg" alt="hackathon2018">
+            <p class="mb-5">
+              與台灣的社群成員聊聊IOTA與Cardarno這兩個技術的近況
+              <br> 活動流程：
+              <br> 18:30-19:00 開放入場
+              <br> 19:00-19:05 OKEx Taiwan :開場
+              <br> 19:05-19:20 比特先生:介紹 OKEx的合約交易
+              <br> 19:20-19:40 IOTA: IOTA發展近況與台灣社群
+              <br> 19:40-20:00 Cardano: Cardano基本介紹
+              <br> 20:00-20:10 休息時間
+              <br> 20:10-20:30 討論- 台灣區塊鏈社群發展
+              <br> 20:25-20:45 交流時間
+              <br>
+
+            </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="https://okextaiwan.kktix.cc/events/iotacardano#utm_source=Facebook_PicSee&utm_medium=Social">
+              <i class="fa fa-ticket "></i>
+              報名連結
+            </a>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" data-toggle="modal" data-target="#nophoto">
+              <i class="fa fa-photo"></i>
+              活動照片
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ETH Meetup -->
+  <div class="portfolio-modal mfp-hide" id="ethmeetup">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">
+              區塊鏈應用落地還缺哪些環節？
+              <br>—基於公鏈的應用層協議和移動端解決方案（實作工作坊）
+            </h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/project/eth/eth.jpg" alt="hackathon2018">
+            <p class="mb-5">以太坊的應用讓世界瘋狂，
+              <br>而Taipei Etheruem Meetup（台北以太坊社群）以深刻的技術討論而著稱，
+              <br> 這次在難得的機會下邀請到了Weiwu Zhang 張韡武與Victor Zhang 張中南兩位區塊鏈專家，
+              <br>與我們談談「區塊鏈應用落地還缺哪些環節？」，
+              <br>在第一天的概念介紹後第二天也繼續進行實作工作坊，
+              <br>邀請關注以太坊技術與落地應用的朋友們一起參與！
+            </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="https://alysida.kktix.cc/events/tem-usecase-2#utm_source=Facebook_PicSee&utm_medium=Social">
+              <i class="fa fa-ticket"></i>
+              報名連結
+            </a>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="https://www.facebook.com/ALYSIDA.io/posts/1882780081778573?__xts__[0]=68.ARBlCi1SLWuKMPFY34MV6a3wK9BYlkBfV13S7ALBDWETJHQfJnSwj9g-rcY--gzTOK4vP_WUz4Pl1S3IfmT_mCiugC6P68smiGuQAkwBJ3BgDJx_5dSayW_qZS06edVMIX_NWj1jn8g_&__tn__=-R">
+              <i class="fa fa-photo"></i>
+              活動照片
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- unsign -->
+  <div class="modal fade" id="unsign" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">叭～叭～</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          活動尚未開始報名喔
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nophoto -->
+  <div class="modal fade" id="nophoto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">叭～叭～</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          照片還沒整理好喔
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
